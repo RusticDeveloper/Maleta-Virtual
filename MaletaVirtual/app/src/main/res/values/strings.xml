@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Maleta Virtual</string>
+    <string name="email_input">Ingrese el correo:</string>
+    <string name="password_input">Ingresa la contraseña:</string>
+    <string name="register_question_boton">¿no tienes cuenta? Registrate!!</string>
+    <string name="titulo_login">Inicia sesión y alista tu maleta!!</string>
+    <string name="login_button">Ingresar</string>
+    <string name="register_button">Registrarse</string>
+    <string name="cancel_button">Cancelar</string>
+    <string name="register_title">Registrate en Maleta Virtual</string>
+    <string name="name_input">Ingrese su nombre:</string>
+    <string name="repeat_password_input">Repita la contraseña:</string>
+    <string name="password_hint">contraseña</string>
+    <string name="email_hint">Correo</string>
+    <string name="name_hint">Ingrese su nombre</string>
+    <string name="repassword_hint">Repita su contraseña</string>
+    <string name="reg_pass_hint">Su contraseña debe tener 6 o más caracteres</string>
+    <string name="newBag_title">Crea tu nueva maleta de viaje</string>
+    <string name="newbag_decription">Ingrese el nombre de la maleta: </string>
+    <string name="newbag_buton">Crear Maleta</string>
+    <string name="cancel_buton">Cancelar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/activity_login.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/activity_main.xml" value="0.325" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/activity_maleta.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/activity_nueva_categoria.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/activity_nueva_maleta.xml" value="0.25" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/activity_principal.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/activity_registro.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/bag_item.xml" value="0.3323076923076923" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/bag_items.xml" value="0.325" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/bags.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/fragment_elementos_maleta.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/fragment_lista_maleta.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/fragment_lista_maleta_grupal.xml" value="0.3375" />
+        <entry key="..\:/Users/DDRC/Documents/GitHub/Maleta-Virtual/MaletaVirtual/app/src/main/res/layout/spinner_item.xml" value="0.325" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

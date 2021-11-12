@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "749167926407",
+    "project_id": "maleta-virtual",
+    "storage_bucket": "maleta-virtual.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749167926407:android:a097e87389b896a5fe2c22",
+        "android_client_info": {
+          "package_name": "com.example.maletavirtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749167926407-0p744svh7i8trkau8decrnst8gsp6415.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGj252Modm1RW414c0qG3YvUDIuxRz9QE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749167926407-0p744svh7i8trkau8decrnst8gsp6415.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
