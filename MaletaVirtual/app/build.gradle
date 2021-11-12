@@ -52,5 +52,7 @@ dependencies {
     implementation 'com.google.android.gms:play-services-auth:19.2.0'
     // uso de la base de datos
     implementation 'com.google.firebase:firebase-firestore-ktx'
+    // uso de un componente spinner searchable
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
 
 }

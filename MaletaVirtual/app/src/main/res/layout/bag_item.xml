@@ -1,62 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fr_baglayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/fr_baglayout">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/bags_background"
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#A30202"
-        >
-
-        <ImageView
-            android:id="@+id/delete_icon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="10dp"
-            app:srcCompat="@drawable/ic_baseline_delete_24" />
+        android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/text_desc"
-            android:layout_width="wrap_content"
+            android:id="@+id/itemName"
+            android:layout_width="259dp"
             android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="24dp"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="10dp"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/delete_icon"
-            android:layout_toStartOf="@id/delete_icon"
-            android:text="Eliminar"
-            />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/item_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#fff"
-        android:clickable="true"
-        >
-
-        <CheckBox
-            android:id="@+id/item_check"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
             android:layout_weight="1"
-            android:text="elementos"
-            android:textColor="#158493"
-            android:textSize="18sp" />
-    </RelativeLayout>
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#450B0B"
+            android:textSize="20sp" />
 
-
-</FrameLayout>
+        <TextView
+            android:id="@+id/itemQuantity"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#450B0B"
+            android:textSize="20sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

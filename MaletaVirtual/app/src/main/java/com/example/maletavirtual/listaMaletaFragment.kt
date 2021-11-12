@@ -1,5 +1,6 @@
 package com.example.maletavirtual
 
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -8,9 +9,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.ListView
-import android.widget.Toast
+import android.widget.*
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -44,22 +43,43 @@ class listaMaletaFragment : Fragment() {
                 val adap = BagAdapter(vista.context, maletas)
                 bagList.adapter = adap
                 bagList.setOnItemClickListener { adapterView, view, i, l ->
-                    Toast.makeText(
-                        view.context,
-                        "tocaste el :" + maletas[i].NombreMaleta,
-                        Toast.LENGTH_LONG
-                    ).show()
                     val maletasItem = Intent(view.context,MaletaActivity::class.java).apply {
                         putExtra("bagID",maletasID[i])
                     }
                     startActivity(maletasItem)
                 }
                 bagList.setOnItemLongClickListener { adapterView, view, i, l ->
-                    Toast.makeText(
-                        view.context,
-                        "tocaste el " + maletas[i].NombreMaleta+" Largo y tendido",
-                        Toast.LENGTH_LONG
-                    ).show()
+                    /*dialogo para cambiar el nombre y/o eliminar la mochila
+                    * instancia el dialogo y la vista del dialogo*/
+                    val dialogoMochila=AlertDialog.Builder(vista.context)
+                    val vistaDialogo=layoutInflater.inflate(R.layout.dialogo_elementos,null)
+                    dialogoMochila.setView(vistaDialogo)
+                    /*funcionalidad de los botones*/
+
+                    val tvValue=vistaDialogo.findViewById<TextView>(R.id.Nombre_elem)
+                    val etValue=vistaDialogo.findViewById<EditText>(R.id.edit_nombre_elem)
+                    val btnValue=vistaDialogo.findViewById<Button>(R.id.boton_dialogo)
+                    val nuevoNombreMochila=maletas[i].NombreMaleta
+                    tvValue.text=nuevoNombreMochila
+
+                    btnValue.setOnClickListener {
+                        if(etValue.text.toString().isEmpty()){
+                            Toast.makeText(
+                                view.context,
+                                "Ingrese un nuevo nombre para la Mochila",
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }else{
+                            bagRef.document(nuevoNombreMochila).set(
+                                hashMapOf(
+                                    "nombre_maleta" to etValue.text.toString().trim()
+                                )
+                            )
+                        }
+                    }
+
+                    /*crea y muestra el dialogo*/
+                    dialogoMochila.create().show()
                     true
                 }
             }.addOnFailureListener {

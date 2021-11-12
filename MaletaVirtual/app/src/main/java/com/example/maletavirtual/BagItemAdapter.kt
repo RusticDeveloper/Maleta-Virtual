@@ -8,9 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class BagItemAdapter(private val itemMaleta:List<Bags>):RecyclerView.Adapter<BagItemAdapter.ViewHolder>(){
     inner class ViewHolder (viewItem:View):RecyclerView.ViewHolder(viewItem){
-        private  val itm_bag=viewItem.findViewById<CheckBox>(R.id.item_check)
+        private  val itm_name=viewItem.findViewById<CheckBox>(R.id.itemName)
+        private  val itm_quantity=viewItem.findViewById<CheckBox>(R.id.itemQuantity)
         fun bind(bagElem: Bags) {
-            itm_bag.setText(bagElem.NombreMaleta)
+            itm_name.setText(bagElem.NombreMaleta)
+            itm_quantity.setText(bagElem.NombreMaleta)
         }
     }
 

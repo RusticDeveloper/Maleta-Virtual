@@ -13,7 +13,6 @@
         android:layout_height="25dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="96dp"
-        android:text="Maleta de viaje"
         android:textColor="#130101"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/add_item"
@@ -43,12 +42,14 @@
         app:layout_constraintEnd_toStartOf="@+id/add_group"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
         android:id="@+id/sp_categorias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
-        android:background="#950B0B"
+        android:minHeight="48dp"
+        android:pointerIcon="help"
+        android:popupBackground="#afafaff1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nombreMaleta" />
 

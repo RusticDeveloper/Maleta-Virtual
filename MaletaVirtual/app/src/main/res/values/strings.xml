@@ -19,6 +19,13 @@
     <string name="newbag_decription">Ingrese el nombre de la maleta: </string>
     <string name="newbag_buton">Crear Maleta</string>
     <string name="cancel_buton">Cancelar</string>
+    <string name="changeName_buton_dialog">Cambiar Nombre</string>
+    <string name="delete_buton_dialog">Eliminar</string>
+    <string name="ediText_dialog_hint">Ingresa el nuevo nombre...</string>
+    <string name="n1">Cancelar</string>
+    <string name="n2">Cancelar</string>
+
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
