@@ -8,6 +8,8 @@
         android:id="@+id/sp_item_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8sp"
         android:text="TextView"
         android:textColor="#054A65"
         android:textSize="20sp"

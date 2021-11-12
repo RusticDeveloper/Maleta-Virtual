@@ -56,13 +56,6 @@ class MaletaActivity : AppCompatActivity() {
                     override fun onNothingSelected(p0: AdapterView<*>?) {
                         TODO("Not yet implemented")
                     }
-
-                }
-                listaCategorias.onItemClickListener=object:AdapterView.OnItemClickListener{
-                    override fun onItemClick(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
-                        Toast.makeText(applicationContext,"usted a tocado el elemento..."+listaCategory[p2],Toast.LENGTH_LONG).show()
-                    }
-
                 }
             }
             .addOnFailureListener {
