@@ -11,7 +11,7 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="84dp"
         android:text="@string/newBag_title"
         android:textColor="#025FB1"
         android:textSize="24sp"
@@ -22,7 +22,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="5dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +44,7 @@
             android:layout_height="10dp" />
 
         <EditText
-            android:id="@+id/bag_name"
+            android:id="@+id/category_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -56,7 +58,7 @@
             android:layout_height="10dp" />
 
         <Button
-            android:id="@+id/create_bag"
+            android:id="@+id/create_cat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
@@ -74,7 +76,7 @@
             android:layout_height="wrap_content"
             android:background="#00FFFFFF"
             android:backgroundTint="#00FFFFFF"
-            android:text="@string/cancel_buton"
+            android:text="@string/cancel_button"
             android:textColor="#530101" />
 
     </LinearLayout>

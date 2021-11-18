@@ -89,10 +89,6 @@ class PrincipalActivity : AppCompatActivity(),fragmentListener {
         onBackPressed()
     }
 
-    override fun onloadFuntion() {
-        Toast.makeText(this,"tocado",Toast.LENGTH_LONG).show()
-    }
-
     override fun getEmail(): String {
         val userMail = intent.getStringExtra("usuario_correo")
         return userMail.toString()

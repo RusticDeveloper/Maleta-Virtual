@@ -11,18 +11,21 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/newBag_title"
+        android:layout_marginTop="72dp"
+        android:text="@string/create_cat_title"
         android:textColor="#025FB1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="5dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +35,7 @@
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/newbag_decription"
+            android:text="@string/create_cat_name_title"
             android:textAlignment="center"
             android:textColor="#0E2E47"
             android:textSize="16sp" />
@@ -42,22 +45,31 @@
             android:layout_height="10dp" />
 
         <EditText
-            android:id="@+id/bag_name"
+            android:id="@+id/category_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="#10003A" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="10dp" />
 
         <Button
-            android:id="@+id/create_bag"
+            android:id="@+id/create_cat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#00AF9A9A"
-            android:text="@string/newbag_buton"
+            android:background="@android:color/transparent"
+            android:text="@string/create_cat_button"
+            android:textColor="#530101" />
+
+        <Button
+            android:id="@+id/cancel_cat_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/cancel_button"
             android:textColor="#530101" />
 
     </LinearLayout>

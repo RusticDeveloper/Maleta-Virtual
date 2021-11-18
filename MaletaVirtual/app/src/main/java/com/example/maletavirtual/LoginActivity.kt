@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
             irRegistro()
         }
         inicio.setOnClickListener {
-            iniciarSecion()
+            iniciarSesion()
         }
 
         MOBoton.setOnCheckedChangeListener { compoundButton, isCheched ->
@@ -57,7 +57,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     /*funciones de accion*/
-    private fun iniciarSecion() {
+    private fun iniciarSesion() {
         var email = correo.text.toString().trim()
         var password = contrasena.text.toString().trim()
         if (email.isNotEmpty() && password.isNotEmpty()) {

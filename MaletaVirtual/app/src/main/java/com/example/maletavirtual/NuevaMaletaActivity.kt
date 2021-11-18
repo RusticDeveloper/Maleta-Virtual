@@ -12,7 +12,6 @@ import com.google.firebase.ktx.Firebase
 class NuevaMaletaActivity : AppCompatActivity() {
     /*declaracion variables*/
     private val db = Firebase.firestore
-
     private lateinit var nuevaMaleta: Button
     private lateinit var cancela: Button
     private lateinit var nombreMaleta: EditText
@@ -22,9 +21,9 @@ class NuevaMaletaActivity : AppCompatActivity() {
         /*ocultando la barra de titulo*/
         supportActionBar?.hide()
         /*relacion con la vista*/
-        nuevaMaleta=findViewById(R.id.create_bag)
+        nuevaMaleta=findViewById(R.id.create_cat)
         cancela=findViewById(R.id.cncel_btn)
-        nombreMaleta=findViewById(R.id.bag_name)
+        nombreMaleta=findViewById(R.id.category_name)
         /*funcionalidad de el boton crear*/
         nuevaMaleta.setOnClickListener {
             crearMaleta()
@@ -39,7 +38,10 @@ class NuevaMaletaActivity : AppCompatActivity() {
             db.collection("maletas").add(
                 hashMapOf(
                     "nombre_maleta" to nombreM,
-                    "propietario" to userMail
+                    "propietario" to userMail,
+                    "lider" to "",
+                    "tipo" to "regular",
+                    "articulos" to mutableListOf<BagItems>()
                 )
             ).addOnSuccessListener {
                 val nuevaMaleta= Intent(this,PrincipalActivity::class.java).apply {

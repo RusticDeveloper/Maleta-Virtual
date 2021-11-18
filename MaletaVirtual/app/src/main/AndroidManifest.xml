@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaletaVirtual">
         <activity
+            android:name=".CrearUnirseGrupoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CrearNuevoArticuloActivity"
+            android:exported="true" />
+        <activity
             android:name=".NuevoArticuloActivity"
             android:exported="true" />
         <activity

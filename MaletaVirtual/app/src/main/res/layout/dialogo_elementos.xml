@@ -7,6 +7,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:background="#F6EFEB"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,6 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="15dp"
+            android:textColor="#0A0B2E"
             android:textSize="20sp" />
 
         <Space
@@ -32,6 +35,8 @@
             android:ems="10"
             android:hint="@string/ediText_dialog_hint"
             android:inputType="textPersonName"
+            android:textColor="#0A0B2E"
+            android:textColorHint="#0A0B2E"
             android:textSize="20sp" />
 
         <Space
@@ -46,6 +51,14 @@
             android:text="@string/changeName_buton_dialog"
             android:textColor="#4E0E0E"
             android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/del_bag_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/delete_buton_dialog"
+            android:textColor="#4E0E0E" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
