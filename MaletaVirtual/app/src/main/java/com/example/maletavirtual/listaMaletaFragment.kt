@@ -26,10 +26,7 @@ class listaMaletaFragment : Fragment() {
         val vista = inflater.inflate(R.layout.fragment_lista_maleta, container, false)
         /*relacion listview*/
         bagList= vista.findViewById(R.id.lista_moch)
-
         reloadItems(vista)
-
-
         // Inflate the layout for this fragment
         return vista
     }

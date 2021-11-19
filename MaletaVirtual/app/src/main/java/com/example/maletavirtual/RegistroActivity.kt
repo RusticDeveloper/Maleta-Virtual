@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -61,7 +62,7 @@ class RegistroActivity : AppCompatActivity() {
         val password: String = contrasena.text.toString().trim()
         val repeatpassword: String = repeatContrasena.text.toString().trim()
         /*condicional para hacer el registro*/
-        if (email.isNotEmpty() && name.isNotEmpty() && password.isNotEmpty() && repeatpassword.isNotEmpty()) {
+        if (email.isNotEmpty() && name.isNotEmpty() && password.isNotEmpty() && repeatpassword.isNotEmpty() && validadarEmail(email)) {
             /*compacion de contraseñas*/
             if (password.equals(repeatpassword)) {
                 FirebaseAuth.getInstance()
@@ -102,5 +103,7 @@ class RegistroActivity : AppCompatActivity() {
                 .show()
         }
     }
-
+    private fun validadarEmail(email: String): Boolean {
+        return Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
 }

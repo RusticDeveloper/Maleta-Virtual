@@ -72,15 +72,11 @@ class CrearNuevoArticuloActivity : AppCompatActivity() {
 
     private fun cancelar() {
         finish()
-//        val cancelar = Intent(this, NuevoArticuloActivity::class.java)
-//        startActivity(cancelar)
-
     }
 
     private fun irCategoria() {
         val nuevaCat = Intent(this, NuevaCategoriaActivity::class.java)
         catResult.launch(nuevaCat)
-//        startActivity(nuevaCat)
     }
 
     private fun poblarSpineer(){

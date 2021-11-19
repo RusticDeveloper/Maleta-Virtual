@@ -69,20 +69,17 @@ class MaletaActivity : AppCompatActivity(),itemFragmentListenner {
         if(viewType.equals("editar") && bagState.equals("simple")){
             /*configuracion inicial e la activity*/
             configuracionInicial()
-            Toast.makeText(this, "Puedes editar y  agregar a grupos esta habilidato", Toast.LENGTH_LONG).show()
         }else if(viewType.equals("editar") && bagState.equals("grupal")){
             fragmentHost.isEnabled=true
             botonAgregarGrupo.visibility=View.GONE
             /*configuracion inicial e la activity*/
             configuracionInicial()
-            Toast.makeText(this, "Puedes editar y  agregar a grupos no esta habilidato", Toast.LENGTH_LONG).show()
         }else if (viewType.equals("ver") && bagState.equals("grupal")){
             fragmentHost.isEnabled=false
             botonAgregarGrupo.visibility=View.GONE
             botonAgregarElemento.visibility=View.GONE
             /*configuracion inicial e la activity*/
             configuracionInicial()
-            Toast.makeText(this, "Puedes ver y  agregar a grupos no esta habilidato", Toast.LENGTH_LONG).show()
         }
     }
 
@@ -113,7 +110,6 @@ class MaletaActivity : AppCompatActivity(),itemFragmentListenner {
 
         }
         botonAgregarGrupo.setOnClickListener {
-            //TODO-- hacer que se agrege a un grupo para la gestion de grupos
             val elemg=Intent(this,CrearUnirseGrupoActivity::class.java)
                 .apply {
                     putExtra("idMaleta",mochID)
@@ -132,7 +128,6 @@ class MaletaActivity : AppCompatActivity(),itemFragmentListenner {
                 listaCategorias.adapter=spAdapter
                 listaCategorias.onItemSelectedListener=object:AdapterView.OnItemSelectedListener{
                     override fun onItemSelected(p0: AdapterView<*>?, p1: View?, posision: Int, p3: Long) {
-//                        val catName=p0?.getItemAtPosition(posision).toString()
                         posicionSpinner=posision
                         val catID=listaCategoryIDs[posision]
                         val catname= p0?.selectedItem.toString()

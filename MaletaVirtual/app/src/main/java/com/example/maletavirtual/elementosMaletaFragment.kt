@@ -56,8 +56,6 @@ class elementosMaletaFragment : Fragment() {
         val itemsID = mutableListOf<String>()
         val listaItems = mutableListOf<BagItems>()
         val bagRef = db.collection("maletas").document(mochID)
-        Toast.makeText(vista?.context, "nombre de la categoria: " + catname, Toast.LENGTH_LONG).show()
-
         bagRef
             .get()
             .addOnSuccessListener { document ->
@@ -87,7 +85,6 @@ class elementosMaletaFragment : Fragment() {
                             .addOnSuccessListener {
                                 bagRef.update("articulos",FieldValue.arrayUnion(nuevoItem))
                                     .addOnSuccessListener {
-                                        Toast.makeText(vista?.context, "Funciono el cambio de estado", Toast.LENGTH_LONG).show()
                                         llenarLista(vista)
                                     }
                                     .addOnFailureListener { Toast.makeText(vista?.context, "Error: "+it.toString(), Toast.LENGTH_LONG).show() }
@@ -99,7 +96,6 @@ class elementosMaletaFragment : Fragment() {
                             .addOnSuccessListener {
                                 bagRef.update("articulos",FieldValue.arrayUnion(nuevoItem))
                                     .addOnSuccessListener {
-                                        Toast.makeText(vista?.context, "Funciono el cambio de estado a verdadero", Toast.LENGTH_LONG).show()
                                         llenarLista(vista)
                                     }
                                     .addOnFailureListener { Toast.makeText(vista?.context, "Error: "+it.toString(), Toast.LENGTH_LONG).show() }
@@ -145,7 +141,6 @@ class elementosMaletaFragment : Fragment() {
                                     val nuevoItem=BagItems(item.idArticulo,item.nombreArticulo,item.nombreCategoria,etCantidad.text.toString(),item.empacado)
                                     bagRef.update("articulos",FieldValue.arrayUnion(nuevoItem))
                                         .addOnSuccessListener {
-                                            Toast.makeText(vista?.context, "Funciono el cambio de cantidad", Toast.LENGTH_LONG).show()
                                             /*cerrando el dialog*/
                                             adm.dismiss()
                                             /*recargando los elementos*/

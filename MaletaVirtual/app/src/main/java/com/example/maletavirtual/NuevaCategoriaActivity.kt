@@ -43,8 +43,6 @@ class NuevaCategoriaActivity : AppCompatActivity() {
                     "nombre_categoria" to nombreC,
                 )
             ).addOnSuccessListener {
-//                val nuevaCat= Intent(this,CrearNuevoArticuloActivity::class.java)
-//                startActivity(nuevaCat)
                 setResult(Activity.RESULT_OK)
                 finish()
             }.addOnFailureListener {
@@ -56,10 +54,6 @@ class NuevaCategoriaActivity : AppCompatActivity() {
         }
     }
     private fun cancelar(){
-//        val userMail = intent.getStringExtra("user_mail")
-//        val nuevaCat= Intent(this,CrearNuevoArticuloActivity::class.java)
-//        startActivity(nuevaCat)
         finish()
-
     }
 }

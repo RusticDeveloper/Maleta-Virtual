@@ -64,7 +64,6 @@ class NuevaMaletaActivity : AppCompatActivity() {
         }
         startActivity(nuevaMaleta)
         finish()
-
     }
 
 }

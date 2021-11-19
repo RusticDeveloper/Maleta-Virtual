@@ -70,15 +70,12 @@ class listaMaletaGrupalFragment : Fragment() {
                 bagList.adapter = adap
                 bagList.setOnItemClickListener { adapterView, view, i, l ->
                     Log.i("listaLideres",lideresID.toString())
-                    //TODO-- hacer que pregunte si va a ir a la lista de maletas normal o la de grupo
                     if (lideresID[i].trim().equals(usrMail)){
-                        Toast.makeText(adapterView.context, "Eres Lider" , Toast.LENGTH_LONG).show()
                     val maletasItem = Intent(view.context, MaletaGrupalActivity::class.java).apply {
                         putExtra("bagID", maletasID[i])
                     }
                     startActivity(maletasItem)
                     }else{
-                        Toast.makeText(adapterView.context, "No eres lider" , Toast.LENGTH_LONG).show()
                     val maletasItem = Intent(view.context, MaletaActivity::class.java).apply {
                         putExtra("bagID", maletasID[i])
                         putExtra("tipoVista", "editar")
